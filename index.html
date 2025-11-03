@@ -91,7 +91,7 @@
 
             // dozvoli skok samo ako igra traje
             if (igraUToku && igrac.uSkoku === false) {
-                igrac.brzinaSkoka = -14;
+                igrac.brzinaSkoka = -17;
                 igrac.uSkoku = true;
             }
         }
@@ -101,7 +101,9 @@
         if (!igraUToku) return;
 
         kontekst.clearRect(0, 0, platno.width, platno.height);
-
+// POD
+kontekst.fillStyle = "gray";
+kontekst.fillRect(0, 180, platno.width, 20);
         // IGRAC
         kontekst.fillStyle = "red";
         kontekst.fillRect(igrac.x, igrac.y, igrac.sirina, igrac.visina);
@@ -174,6 +176,7 @@
 
 </body>
 </html>
+
 
 
 
