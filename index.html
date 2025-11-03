@@ -91,7 +91,7 @@
 
             // dozvoli skok samo ako igra traje
             if (igraUToku && igrac.uSkoku === false) {
-                igrac.brzinaSkoka = -11;
+                igrac.brzinaSkoka = -14;
                 igrac.uSkoku = true;
             }
         }
@@ -132,7 +132,7 @@
 
         // GRAVITACIJA
         igrac.y += igrac.brzinaSkoka;
-        igrac.brzinaSkoka += 0.5;
+        igrac.brzinaSkoka += 0.6;
 
         // Ako dotakne tlo
         if (igrac.y > 150) {
@@ -174,4 +174,5 @@
 
 </body>
 </html>
+
 
